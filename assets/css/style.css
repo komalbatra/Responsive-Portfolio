@@ -1,0 +1,244 @@
+/*Updated CSS File for Responsive Portfolio Homework*/
+/*Submission on Aug 25th 2018*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/background.png");
+    padding: 0;
+    margin: 0;
+    }
+
+nav {
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    height: 70px;
+    }
+
+ul {
+    background: white;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin:0;
+    line-height: 350%;
+    font-size: 14px;
+    }
+
+#otherlinks {
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    text-align: center;
+    padding: 5px;
+    color: black;
+    float: right;
+    }
+
+a {
+    text-decoration: none;
+    float:left;
+    align-content: center;
+   }
+
+#brand {
+    float: left;
+    background: #4aaaa5;
+    color: white;
+    font-size: 22px;
+    margin-left: 130px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    }
+   
+.main2 {
+    max-width: 960px;
+    background: white;
+    margin-right: 10%;    
+    margin-left: 10%;
+    margin-top:3%;
+    height: auto;
+    border: 2px solid #dddddd;
+    }
+
+#topic {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    font-size: 24px;
+    padding: 20px 30px 0 30px;
+    }
+
+hr { 
+    display: block;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 2px;
+    margin: 0 30px 0 30px;
+    }
+
+/* Index Page Elements*/
+img {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    padding: 10px 30px 10px 30px;
+    margin: 20px 0 0 10px;
+     }  
+
+.mainpara {
+    align-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 10px 40px 35px 40px;
+    line-height: 1.8; 
+    color: #777777;
+    }
+
+/*Portfolio Page Elements*/
+.grid-container {
+    display: grid;
+    grid-gap: 0px 0px;
+    grid-template-columns: auto auto;
+    padding: 0px;
+    width: 200px
+    }
+
+.grid-item {
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    }
+
+.gallery {
+    margin-bottom: 0px;
+    float: left;
+    width: 180px;
+    height: 135px;
+    margin-top: 20px;
+    margin-left: 10px;
+    }
+
+.gallery img {
+    width: 180px;
+    height: 135px;
+    padding: 0;
+    }
+
+.desc {
+    text-align: center;
+    background: #4aaaa5;
+    padding: 0px;
+    height: 42px;
+    float: left;
+    line-height: 40px;
+    margin-top: -45px;
+    margin-left: 10px;
+    width: 180px;
+    color: white;
+    font-size: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    }
+
+/*Contact Page Elements*/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+
+input[type=submit] {
+    width: auto;
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 18px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: auto;
+    }
+
+/*Footer ofcourse*/
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #666666;
+    font-size: 8px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    border-top: 5px solid teal;
+    margin-top: 50px;
+    line-height: 50px; 
+    }
+
+/* Media Queries */
+@media screen and (max-width: 980px) { 
+    .main2 {
+            max-width: 100%;
+            padding:20px; 
+            margin-right: 30%;    
+            margin-left: 10%;
+            margin-top:3%;
+            height: auto;
+            }
+    img {
+            width: 100%;
+            }
+        }
+
+@media screen and (max-width: 768px) { 
+    .main2 {
+            max-width: 100%; 
+            padding:20px;
+            margin-left: 2%;
+            margin-top:3%;
+            height: auto;
+            }
+    img {
+            width: 100%;
+            }
+        }
+@media screen and (max-width: 640px) { 
+    .main2 {
+            max-width: 100%;
+            padding:20px; 
+            margin-right: -130%;    
+            margin-left: 2%;
+            margin-top:3%;
+            height: auto;
+            }
+    img {
+            width: 100%;
+            }
+    #smallpics{
+            width:100%;
+            }
+    #otherlinks {
+            max-width: 100%;
+            display: inline;
+            }
+    #brand{
+            width: 100%;
+            }
+        }
+
